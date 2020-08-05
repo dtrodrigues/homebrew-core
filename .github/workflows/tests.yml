@@ -5,12 +5,14 @@ on:
   pull_request: []
 jobs:
   tap_syntax:
-    if: github.repository == 'Homebrew/homebrew-core'
+    #    if: github.repository == 'Homebrew/homebrew-core'
+    if: github.event_name == 'pull_request' && ! contains(github.event.pull_request.title, '(syntax only)')
     runs-on: ubuntu-latest
     steps:
     - name: Set up Homebrew
       id: set-up-homebrew
       run: |
+        exit
         if which brew &>/dev/null; then
           HOMEBREW_PREFIX="$(brew --prefix)"
           HOMEBREW_REPOSITORY="$HOMEBREW_PREFIX/Homebrew"
@@ -56,6 +58,7 @@ jobs:
         else
           sudo chown -R "$USER" "$HOMEBREW_PREFIX"
           sudo chmod -R g-w,o-w "$HOMEBREW_CORE_REPOSITORY"
+          sudo setfacl -b -R "$HOMEBREW_PREFIX"
         fi
 
     - name: Cache Bundler RubyGems
@@ -80,12 +83,8 @@ jobs:
 
   tests:
     needs: tap_syntax
-    if: github.event_name == 'pull_request'
-    strategy:
-      matrix:
-        version: [10.15, 10.14, 10.13]
-      fail-fast: false
-    runs-on: ${{ matrix.version }}
+    if: github.event_name == 'pull_request' && github.pull_request.x == 'blah'
+    runs-on: macOS-latest
     timeout-minutes: 4320
     env:
       HOMEBREW_GIT_NAME: BrewTestBot
