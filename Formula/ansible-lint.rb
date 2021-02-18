@@ -3,8 +3,8 @@ class AnsibleLint < Formula
 
   desc "Checks ansible playbooks for practices and behaviour"
   homepage "https://github.com/ansible/ansible-lint/"
-  url "https://files.pythonhosted.org/packages/ad/c3/a20ea998c93502754629e1a7517ab0a69d3caf3ad5523c762c2fefa5e40d/ansible-lint-5.0.0.tar.gz"
-  sha256 "9c9ef05d361c374097206d1df200ab01c9cd3feef42b55898b90b0a09fee88d4"
+  url "https://files.pythonhosted.org/packages/f0/62/9388047bdab32f7599d1809079458a289dd90ea518631202a4ad445f1610/ansible-lint-5.0.1.tar.gz"
+  sha256 "809655a72960754bf9afb286b7089a7cd4e0a10b80382a56ff7ad42bf056c895"
   license "MIT"
 
   bottle do
@@ -24,11 +24,6 @@ class AnsibleLint < Formula
 
   on_linux do
     depends_on "gmp"
-  end
-
-  resource "ansible-base" do
-    url "https://files.pythonhosted.org/packages/bf/44/a75eec7928986a48e179769873f282496e007587e112c57d367c5e1abc1a/ansible-base-2.10.5.tar.gz"
-    sha256 "33ae323923b841f3d822f355380ce7c92610440362efeed67b4b39db41e555af"
   end
 
   resource "bracex" do
@@ -51,24 +46,14 @@ class AnsibleLint < Formula
     sha256 "0e99ff57d87f7b5def0ca79917e88fb9351aa0d52e228ee38bff7cd858315fe4"
   end
 
-  resource "Jinja2" do
-    url "https://files.pythonhosted.org/packages/4f/e7/65300e6b32e69768ded990494809106f87da1d436418d5f1367ed3966fd7/Jinja2-2.11.3.tar.gz"
-    sha256 "a6d58433de0ae800347cab1fa3043cebbabe8baa9d29e668f1c768cb87a333c6"
-  end
-
-  resource "MarkupSafe" do
-    url "https://files.pythonhosted.org/packages/b9/2e/64db92e53b86efccfaea71321f597fa2e1b2bd3853d8ce658568f7a13094/MarkupSafe-1.1.1.tar.gz"
-    sha256 "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
-  end
-
   resource "packaging" do
     url "https://files.pythonhosted.org/packages/86/3c/bcd09ec5df7123abcf695009221a52f90438d877a2f1499453c6938f5728/packaging-20.9.tar.gz"
     sha256 "5b327ac1320dc863dca72f4514ecc086f31186744b84a230374cc1fd776feae5"
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/e1/86/8059180e8217299079d8719c6e23d674aadaba0b1939e25e0cc15dcf075b/Pygments-2.7.4.tar.gz"
-    sha256 "df49d09b498e83c1a73128295860250b0b7edd4c723a32e9bc0d295c7c2ec337"
+    url "https://files.pythonhosted.org/packages/19/d0/dec5604a275b19b0ebd2b9c43730ce39549c8cd8602043eaf40c541a7256/Pygments-2.8.0.tar.gz"
+    sha256 "37a13ba168a02ac54cc5891a42b1caec333e59b66addb7fa633ea8a6d73445c0"
   end
 
   resource "pyparsing" do
@@ -82,8 +67,8 @@ class AnsibleLint < Formula
   end
 
   resource "rich" do
-    url "https://files.pythonhosted.org/packages/8c/65/8743a4b98585dbebf943aa8d8d30421606b492decfde9b8ffc3d5812a791/rich-9.10.0.tar.gz"
-    sha256 "e0f2db62a52536ee32f6f584a47536465872cae2b94887cf1f080fb9eaa13eb2"
+    url "https://files.pythonhosted.org/packages/7b/5a/5ade9c4713b1745970b6276b6c7d5ae37d0cafd453c6c4f1a4b44833980a/rich-9.11.0.tar.gz"
+    sha256 "f8f08fdac6bd67dc2dd7fe976da702d748487aa9eb5d050c48b2321bc67ed659"
   end
 
   resource "ruamel.yaml" do
@@ -97,8 +82,8 @@ class AnsibleLint < Formula
   end
 
   resource "wcmatch" do
-    url "https://files.pythonhosted.org/packages/51/14/cc689686ea37e37aa5693160203f3e89e210541b190173234e3443f2f6d5/wcmatch-8.1.tar.gz"
-    sha256 "4b2f5758d845d2cb391529f892201916cbb1c2ce10a447c7b7a57a2f4bb5647e"
+    url "https://files.pythonhosted.org/packages/7b/40/30ff854a371615543baf352a0d1358c9b1a5c34050ffb4acee81337d1eca/wcmatch-8.1.1.tar.gz"
+    sha256 "7ba09191f9582e82d864829bdfbab02df46e26a46a304e57c7fe5652f07f297a"
   end
 
   def install
