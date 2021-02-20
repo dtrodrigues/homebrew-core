@@ -46,6 +46,7 @@ class Richmd < Formula
   end
 
   test do
-    assert_equal "• Hello, World", shell_output("echo '- Hello, World' | #{bin}/richmd").strip
+    (testpath/"foo.md").write("- Hello, World")
+    assert_equal "• Hello, World", shell_output("#{bin}/richmd foo.md").strip
   end
 end
