@@ -5,7 +5,7 @@ class Gprof2dot < Formula
   homepage "https://github.com/jrfonseca/gprof2dot"
   url "https://files.pythonhosted.org/packages/0f/80/11d3ec1703cc61606ddc68851747d1d1df3700d5e6c2b559af6dbeb398c5/gprof2dot-2021.2.21.tar.gz"
   sha256 "1223189383b53dcc8ecfd45787ac48c0ed7b4dbc16ee8b88695d053eea1acabf"
-  license "LGPL-3.0"
+  license "LGPL-3.0-or-later"
   head "https://github.com/jrfonseca/gprof2dot.git"
 
   bottle do
