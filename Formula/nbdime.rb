@@ -14,6 +14,7 @@ class Nbdime < Formula
     sha256 cellar: :any_skip_relocation, mojave:        "f4925ca57d0fa45d7fb628a85d750e7259669840c360006717863a472035f76a"
   end
 
+  depends_on "node" => :build
   depends_on "python@3.9"
 
   resource "anyio" do
