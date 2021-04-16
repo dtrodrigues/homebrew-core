@@ -3,10 +3,9 @@ class Pympress < Formula
 
   desc "Simple and powerful dual-screen PDF reader designed for presentations"
   homepage "https://github.com/Cimbali/pympress/"
-  url "https://files.pythonhosted.org/packages/92/80/c63ad7748e877dfeb5d7d756c1bdd4c2657e5a857814b4d6edf96d44678c/pympress-1.5.3.tar.gz"
-  sha256 "d8c10c286d1de2210c19a3e752542b61c8bcc592c48553f7c7043e943a87d05d"
+  url "https://files.pythonhosted.org/packages/58/1e/f8cec6f30f8aa3927ad73d7f5c3ab7fdc77a253ac69689465a3c42abadc1/pympress-1.6.0.tar.gz"
+  sha256 "abac4c86be00795a13e06d1c3e426909fbae96ee9b3ef6eb628fa910e844373b"
   license "GPL-2.0"
-  revision 2
   head "https://github.com/Cimbali/pympress.git"
 
   bottle do
@@ -22,29 +21,9 @@ class Pympress < Formula
   depends_on "pygobject3"
   depends_on "python@3.9"
 
-  resource "argh" do
-    url "https://files.pythonhosted.org/packages/e3/75/1183b5d1663a66aebb2c184e0398724b624cecd4f4b679cb6e25de97ed15/argh-0.26.2.tar.gz"
-    sha256 "e9535b8c84dc9571a48999094fda7f33e63c3f1b74f3e5f3ac0105a58405bb65"
-  end
-
-  resource "pathtools" do
-    url "https://files.pythonhosted.org/packages/e7/7f/470d6fcdf23f9f3518f6b0b76be9df16dcc8630ad409947f8be2eb0ed13a/pathtools-0.1.2.tar.gz"
-    sha256 "7c35c5421a39bb82e58018febd90e3b6e5db34c5443aaaf742b3f33d4655f1c0"
-  end
-
-  resource "python-vlc" do
-    url "https://files.pythonhosted.org/packages/a8/51/299f4804c43f99d718ed43a63b1ea0712932e25b6bbe1ee1817cb8e954f7/python-vlc-3.0.7110.tar.gz"
-    sha256 "821bca0dbe08fbff97a65e56ff2318ad7d499330876579c39f01f3fb38c7b679"
-  end
-
-  resource "PyYAML" do
-    url "https://files.pythonhosted.org/packages/e3/e8/b3212641ee2718d556df0f23f78de8303f068fe29cdaa7a91018849582fe/PyYAML-5.1.2.tar.gz"
-    sha256 "01adf0b6c6f61bd11af6e10ca52b7d4057dd0be0343eb9283c878cf3af56aee4"
-  end
-
   resource "watchdog" do
-    url "https://files.pythonhosted.org/packages/bb/e3/5a55d48a29300160779f0a0d2776d17c1b762a2039b36de528b093b87d5b/watchdog-0.9.0.tar.gz"
-    sha256 "965f658d0732de3188211932aeb0bb457587f04f63ab4c1e33eab878e9de961d"
+    url "https://files.pythonhosted.org/packages/17/8c/fe6b8554e6a107437375ea6f76c62fbb0deb22288c2eb846c2f92b0d843e/watchdog-2.0.2.tar.gz"
+    sha256 "532fedd993e75554671faa36cd04c580ced3fae084254a779afbbd8aaf00566b"
   end
 
   def install
