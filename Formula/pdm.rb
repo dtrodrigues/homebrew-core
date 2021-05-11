@@ -121,13 +121,10 @@ class Pdm < Formula
 
   test do
     (testpath/"pyproject.toml").write <<~EOS
-      [tool.pdm]
+      [project]
       name = "testproj"
-      python_requires = ">=3.9"
+      requires-python = ">=3.9"
 
-      [tool.pdm.dependencies]
-
-      [tool.pdm.dev-dependencies]
     EOS
     system bin/"pdm", "add", "requests==2.24.0"
     assert_match "dependencies = [\n    \"requests==2.24.0\",\n]", (testpath/"pyproject.toml").read
