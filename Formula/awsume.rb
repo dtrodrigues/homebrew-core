@@ -79,11 +79,11 @@ class Awsume < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/awsume -v 2>&1")
+    assert_match version.to_s, shell_output(". #{bin}/awsume -v 2>&1")
 
     file_path = File.expand_path("~/.awsume/config.yaml")
     shell_output(File.exist?(file_path))
 
-    assert_match "PROFILE  TYPE  SOURCE  MFA?  REGION  ACCOUNT", shell_output("#{bin}/awsume --list-profiles 2>&1")
+    assert_match "PROFILE  TYPE  SOURCE  MFA?  REGION  ACCOUNT", shell_output(". #{bin}/awsume --list-profiles 2>&1")
   end
 end
