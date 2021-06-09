@@ -108,6 +108,7 @@ class Borgmatic < Formula
                          .gsub(/user@backupserver:sourcehostname.borg/, repo_path)
                          .gsub("- user@backupserver:{fqdn}", "")
                          .gsub("- /var/log/syslog*", "")
+                         .gsub("- /home/user/path with spaces", "")
     File.open(config_path, "w") { |file| file.puts config_content }
 
     # Initialize Repo
