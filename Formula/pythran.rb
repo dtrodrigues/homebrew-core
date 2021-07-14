@@ -3,8 +3,8 @@ class Pythran < Formula
 
   desc "Ahead of Time compiler for numeric kernels"
   homepage "https://pythran.readthedocs.io/"
-  url "https://files.pythonhosted.org/packages/2e/e9/bc3c16d683dbba5d34666b9861d1c1fdb07da0539655a3cf23a62e4cafa1/pythran-0.9.11.tar.gz"
-  sha256 "a317f91e2aade9f6550dc3bf40b5caeb45b7e012daf27e2b3e4ad928edb01667"
+  url "https://files.pythonhosted.org/packages/60/ca/c2bd4b53b33dc87342c96dea7f0cf0b5473f2e39dd38649d8b72b9114316/pythran-0.9.12.tar.gz"
+  sha256 "5d50dc74dca1d3f902941865acbae981fc24cceeb9d54673d68d6b5c8c1b0001"
   license "BSD-3-Clause"
   head "https://github.com/serge-sans-paille/pythran.git"
 
@@ -23,23 +23,13 @@ class Pythran < Formula
   depends_on "six"
 
   resource "beniget" do
-    url "https://files.pythonhosted.org/packages/50/b9/7d864a50d5d2821686d4374400de45c8e0678e553657343f5f0ea6aff98d/beniget-0.3.0.tar.gz"
-    sha256 "062c893be9cdf87c3144fb15041cce4d81c67107c1591952cd45fdce789a0ff1"
-  end
-
-  resource "decorator" do
-    url "https://files.pythonhosted.org/packages/da/93/84fa12f2dc341f8cf5f022ee09e109961055749df2d0c75c5f98746cfe6c/decorator-4.4.2.tar.gz"
-    sha256 "e3a62f0520172440ca0dcc823749319382e377f37f140a0b99ef45fecb84bfe7"
+    url "https://files.pythonhosted.org/packages/36/09/a4a6a967ca5bcfc0bd6162df4ee93017301fa7d9671483c849300bdba0db/beniget-0.4.0.tar.gz"
+    sha256 "72bbd47b1ae93690f5fb2ad3902ce1ae61dcd868ce6cfbf33e9bad71f9ed8749"
   end
 
   resource "gast" do
-    url "https://files.pythonhosted.org/packages/83/4a/07c7e59cef23fb147454663c3271c21da68ba2ab141427c20548ae5a8a4d/gast-0.4.0.tar.gz"
-    sha256 "40feb7b8b8434785585ab224d1568b857edb18297e5a3047f1ba012bc83b42c1"
-  end
-
-  resource "networkx" do
-    url "https://files.pythonhosted.org/packages/b0/21/adfbf6168631e28577e4af9eb9f26d75fe72b2bb1d33762a5f2c425e6c2a/networkx-2.5.1.tar.gz"
-    sha256 "109cd585cac41297f71103c3c42ac6ef7379f29788eb54cb751be5a663bb235a"
+    url "https://files.pythonhosted.org/packages/a6/fb/7ff6a4ee66673c5964d3cf515ae85ba2076bc64bc2dcbbbd0153718b005f/gast-0.5.0.tar.gz"
+    sha256 "8109cbe7aa0f7bf7e4348379da05b8137ea1f059f073332c3c1cedd57db8541f"
   end
 
   resource "ply" do
